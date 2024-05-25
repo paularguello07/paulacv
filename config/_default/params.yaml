@@ -30,7 +30,7 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: "center"
+    blox: "floating-theme-toggler"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
