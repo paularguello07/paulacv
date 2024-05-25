@@ -1,0 +1,12 @@
+.avatar {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantén la proporción de la imagen */
+    border-radius: 10px; /* Ajusta el radio para darle forma rectangular con bordes suaves */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de relieve */
+    transition: all 0.3s ease; /* Suaviza la transición de los efectos */
+  }
+  
+  .avatar:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada al pasar el cursor */
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+  }

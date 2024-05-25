@@ -8,6 +8,12 @@ appearance:
   mode: system
   color: rose
 
+profile:
+  avatar: images/avatar.jpg
+  avatar_shape: rectangular # Cambia esta línea a rectangular si está configurada como circular.
+  avatar_size: large # Cambia el tamaño de la imagen, puede ser large, medium, o small.
+  avatar_style: relief
+
 # SEO
 marketing:
   seo:
