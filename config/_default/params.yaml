@@ -30,7 +30,7 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: "navbar"
+    blox: "center"
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
@@ -42,7 +42,7 @@ footer:
   copyright:
     notice: '© {year} Me. This work is licensed under {license}'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
