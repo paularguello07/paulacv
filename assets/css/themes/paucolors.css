@@ -1,13 +1,13 @@
 :root {
-  --color-primary-50: 255 240 245;   /* Incremento de brillo */
-  --color-primary-100: 255 220 230;  /* Incremento de brillo */
-  --color-primary-200: 255 195 210;  /* Incremento de brillo */
-  --color-primary-300: 255 165 185;  /* Incremento de brillo */
-  --color-primary-400: 235 105 165;  /* Incremento de saturación y brillo */
-  --color-primary-500: 235 85 150;   /* Incremento de saturación y brillo */
-  --color-primary-600: 215 70 140;   /* Incremento de saturación y brillo */
-  --color-primary-700: 170 60 120;   /* Incremento de saturación y brillo */
-  --color-primary-800: 150 50 105;   /* Incremento de saturación y brillo */
-  --color-primary-900: 130 40 90;    /* Incremento de saturación y brillo */
-  --color-primary-950: 100 30 70;    /* Incremento de saturación y brillo */
+  --color-primary-50: 245 240 247;  /* Tono claro de lila */
+  --color-primary-100: 237 223 240;  /* Tono claro de lila */
+  --color-primary-200: 220 195 230;  /* Tono claro de lila */
+  --color-primary-300: 200 179 212;  /* Tono claro de lila */
+  --color-primary-400: 180 158 192;  /* Tono medio de lila */
+  --color-primary-500: 160 138 173;  /* Tono medio de lila */
+  --color-primary-600: 140 118 153;  /* Tono medio de lila */
+  --color-primary-700: 120 98 134;   /* Tono oscuro de lila */
+  --color-primary-800: 100 78 114;   /* Tono oscuro de lila */
+  --color-primary-900: 80 58 94;     /* Tono oscuro de lila */
+  --color-primary-950: 60 38 75;     /* Tono más oscuro de lila */
 }

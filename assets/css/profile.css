@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.banner {
+    background-image: url('path/to/banner-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.profile-image-container {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -5rem;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.banner-content {
+    color: #333;
+    margin-top: 1rem;
+}
+
+.banner-content h1 {
+    margin: 0.5rem 0;
+    font-size: 2rem;
+}
+
+.banner-content p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.social-icons {
+    margin: 1rem 0;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.about-me {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.about-me h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-me p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.download-cv {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4A90E2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #357ABD;
+}

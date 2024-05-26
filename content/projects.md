@@ -9,7 +9,7 @@ design:
 
 # Page sections
 sections:
-  - block: collection
+  - block: collection_custom
     id: posts
     content:
       title: Projects

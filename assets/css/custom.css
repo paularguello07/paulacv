@@ -1,51 +1,68 @@
 /* Hugo Blox color theme: GREEN */
 :root {
-    --color-secondary-50: rgb(255 240 245);   /* Incremento de brillo */
-    --color-secondary-100: rgb(255 220 230);  /* Incremento de brillo */
-    --color-secondary-200: rgb(255 195 210);  /* Incremento de brillo */
-    --color-secondary-300: rgb(255 165 185);  /* Incremento de brillo */
-    --color-secondary-400: rgb(235 105 165);  /* Incremento de saturación y brillo */
-    --color-secondary-500: rgb(235 85 150);   /* Incremento de saturación y brillo */
-    --color-secondary-600: rgb(215 70 140);   /* Incremento de saturación y brillo */
-    --color-secondary-700: rgb(170 60 120);   /* Incremento de saturación y brillo */
-    --color-secondary-800: rgb(150 50 105);   /* Incremento de saturación y brillo */
-    --color-secondary-900: rgb(130 40 90);    /* Incremento de saturación y brillo */
-    --color-secondary-950: rgb(100 30 70);    /* Incremento de saturación y brillo */
-  }
+  --color-secondary-50: rgb(245, 240, 247);  /* Tono claro de lila */
+  --color-secondary-100: rgb(237, 223, 240);  /* Tono claro de lila */
+  --color-secondary-200: rgb(220, 195, 230);  /* Tono claro de lila */
+  --color-secondary-300: rgb(200, 179, 212);  /* Tono claro de lila */
+  --color-secondary-400: rgb(180, 158, 192);  /* Tono medio de lila */
+  --color-secondary-500: rgb(160, 138, 173);  /* Tono medio de lila */
+  --color-secondary-600: rgb(140, 118, 153);  /* Tono medio de lila */
+  --color-secondary-700: rgb(120, 98, 134);   /* Tono oscuro de lila */
+  --color-secondary-800: rgb(100, 78, 114);   /* Tono oscuro de lila */
+  --color-secondary-900: rgb(80, 58, 94);     /* Tono oscuro de lila */
+  --color-secondary-950: rgb(60, 38, 75);     /* Tono más oscuro de lila */
+}
 
-  .custom-block .avatar {
-    background-image: url('/assets/media/avatar.jpg');
-    width: 300px; /* Ajusta el tamaño según sea necesario */
-    height: 300px; /* Asegúrate de que la altura sea proporcional */
-    border-radius: 0; /* Elimina el borde redondeado */
-    object-fit: cover; /* Asegura que la imagen se ajuste correctamente dentro del contenedor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Agrega sombra para relieve */
-    margin: -75px -35px auto; /* Centra la imagen */
-    display: block;
+
+  .publication-images{
+    object-fit:contain;
+    width: 100%;
+    height: 10%;
   }
+  .sombra{
+    background-color: rgb(245, 245, 245);
+  }
+  
+  .line {
+    height: 2px;
+    width: 70px;
+    background-color: var(--color-secondary-500);
+    border-radius: 15%;
+    display: inline-block;
+    margin:  6px auto;
+}
+  .network-icon{
+    color: var(--color-secondary-500);
+  }
+  .avatar {
+    border-radius: 10px ; /* Elimina el borde redondeado */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente dentro del contenedor */
+    box-shadow: 0 4px 8px var(--color-secondary-100); /* Agrega sombra para relieve */
+    margin: -150px -35px auto; /* Centra la imagen */
+    display: block;
+    /* Calidad de imagen full */;
+  }
+  @media (min-width: 768px) {
+    .avatar {
+        width: 600px; /* Ajusta el ancho para pantallas más grandes */
+        height: 600px; /* Ajusta la altura para pantallas más grandes */
+    }
+}
   .centrado {
     text-align: center;
-    font-family: 'Merriweather', serif;
   }
-  .custom-block title {
-    font-family: 'Merriweather', serif; /* Aplica una fuente profesional */
-    font-size: 1.5rem; /* Tamaño de fuente */
-    font-weight: bold; /* Fuente en negrita */
-    color: var(--color-secondary-500); /* Color de texto */
-  }
-
+  
   .custom-block {
-    font-family: 'Merriweather', serif; /* Aplica una fuente profesional */
     
     border-radius: 10px; /* Bordes redondeados */
   }
+  
 
   .header {
     background-color: #4A90E2; /* Color de fondo */
     padding: 10px; /* Espaciado interno */
     text-align: center; /* Centra el texto */
     font-size: 20px; /* Tamaño de fuente */
-    font-family: 'Merriweather', serif; /* Fuente profesional */
   }
 
   .footer {
@@ -53,12 +70,12 @@
     padding: 10px; /* Espaciado interno */
     text-align: center; /* Centra el texto */
     font-size: 0px; /* Tamaño de fuente */
-    font-family: 'Merriweather', serif; /* Fuente profesional */
+  }
+  .publication-block img {
+    width: 80%;
   }
 
-
   .publication-block {
-    font-family: 'Merriweather', serif; /* Aplica una fuente profesional */
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
     padding: 1rem;
@@ -108,7 +125,6 @@
   }
   
   .custom-block .title {
-    font-family: 'Merriweather', serif; /* Aplica una fuente profesional */
     font-size: 1.5rem; /* Tamaño de fuente */
     font-weight: bold; /* Fuente en negrita */
     margin-bottom: 0.5rem; /* Espaciado inferior */

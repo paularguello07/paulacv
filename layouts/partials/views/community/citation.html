@@ -10,7 +10,7 @@
 {{ $resource := partial "functions/get_featured_image.html" $item }}
 {{ $anchor := $item.Params.image.focal_point | default "Center" }}
 
-<div class="publication-block view-citation mb-5 flex items-start space-x-4 p-4 shadow-md rounded-lg">
+<div class="publication-block view-citation flex items-start shadow-md rounded-lg">
   {{ with $resource }}
     {{ $image := .Fill (printf "200x200 %s" $anchor) }}
     {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}

@@ -6,14 +6,15 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "3rem"
 
 sections:
 
-  - block: resume-biography
+  - block: profile_custom
     content:
-      # The user's folder name in `content/authors/`
       username: admin
+    
+      # The user's folder name in `content/authors/`
       # Show a call-to-action button under your biography? (optional)
       # To link to a file, upload it to your `static/uploads/` folder
       button:
@@ -22,19 +23,17 @@ sections:
         
   
     design:
-      css_class: custom-block, centrado
-      css_style : centrado
+      css_class: centering, custom-block
       banner:
         # Upload a cover image to `assets/media/` folder and reference its filename here (optional)
-        filename: ''
+        filename: 'banner.jpg'
       biography:
         # Customize the CSS style of your biography text (optional)
         style: ''
-      banner:
-        filename: 'banner.jpg'
+      
 
 
-  - block: collection
+  - block: collection_custom
     id: papers
     content:
       
@@ -44,11 +43,13 @@ sections:
           - publication
         featured_only: true
     design:
-      css_class: custom-block 
+      css_class: custom-block , sombra
       view: article-grid
       columns: 2
+      fill_image: false
 
-  - block: collection
+
+  - block: collection_custom
     id: projects
     content:
       title: Selected Projects
@@ -63,26 +64,18 @@ sections:
       columns: 3
 
     
-  - block: collection
+  - block: collection_custom
     content:
       title: Recent Publications
-      text: ""
+      text: "Recent publication"
       filters:
         folders:
           - publication
         exclude_featured: false
     design:
-      css_class: custom-block 
+      css_class: custom-block , sombra
       view: community/citation
 
 
-
-  - block: resume-awards
-    content:
-      title: Awards
-      # Note: `username` refers to the user's folder name in `content/authors/`
-      username: admin
-    design:
-      css_class: custom-block 
 
 ---
