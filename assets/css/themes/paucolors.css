@@ -1,0 +1,13 @@
+:root {
+  --color-primary-50: 255 240 245;   /* Incremento de brillo */
+  --color-primary-100: 255 220 230;  /* Incremento de brillo */
+  --color-primary-200: 255 195 210;  /* Incremento de brillo */
+  --color-primary-300: 255 165 185;  /* Incremento de brillo */
+  --color-primary-400: 235 105 165;  /* Incremento de saturación y brillo */
+  --color-primary-500: 235 85 150;   /* Incremento de saturación y brillo */
+  --color-primary-600: 215 70 140;   /* Incremento de saturación y brillo */
+  --color-primary-700: 170 60 120;   /* Incremento de saturación y brillo */
+  --color-primary-800: 150 50 105;   /* Incremento de saturación y brillo */
+  --color-primary-900: 130 40 90;    /* Incremento de saturación y brillo */
+  --color-primary-950: 100 30 70;    /* Incremento de saturación y brillo */
+}

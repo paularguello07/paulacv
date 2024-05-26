@@ -1,0 +1,115 @@
+/* Hugo Blox color theme: GREEN */
+:root {
+    --color-secondary-50: rgb(255 240 245);   /* Incremento de brillo */
+    --color-secondary-100: rgb(255 220 230);  /* Incremento de brillo */
+    --color-secondary-200: rgb(255 195 210);  /* Incremento de brillo */
+    --color-secondary-300: rgb(255 165 185);  /* Incremento de brillo */
+    --color-secondary-400: rgb(235 105 165);  /* Incremento de saturación y brillo */
+    --color-secondary-500: rgb(235 85 150);   /* Incremento de saturación y brillo */
+    --color-secondary-600: rgb(215 70 140);   /* Incremento de saturación y brillo */
+    --color-secondary-700: rgb(170 60 120);   /* Incremento de saturación y brillo */
+    --color-secondary-800: rgb(150 50 105);   /* Incremento de saturación y brillo */
+    --color-secondary-900: rgb(130 40 90);    /* Incremento de saturación y brillo */
+    --color-secondary-950: rgb(100 30 70);    /* Incremento de saturación y brillo */
+  }
+
+  .custom-block .avatar {
+    background-image: url('/assets/media/avatar.jpg');
+    width: 300px; /* Ajusta el tamaño según sea necesario */
+    height: 300px; /* Asegúrate de que la altura sea proporcional */
+    border-radius: 0; /* Elimina el borde redondeado */
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente dentro del contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Agrega sombra para relieve */
+    margin: -75px -35px auto; /* Centra la imagen */
+    display: block;
+  }
+  .centrado {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+  }
+  .custom-block title {
+    font-family: 'Merriweather', serif; /* Aplica una fuente profesional */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    color: var(--color-secondary-500); /* Color de texto */
+  }
+
+  .custom-block {
+    font-family: 'Merriweather', serif; /* Aplica una fuente profesional */
+    
+    border-radius: 10px; /* Bordes redondeados */
+  }
+
+  .header {
+    background-color: #4A90E2; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    font-size: 20px; /* Tamaño de fuente */
+    font-family: 'Merriweather', serif; /* Fuente profesional */
+  }
+
+  .footer {
+    background-color: #275181; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    font-size: 0px; /* Tamaño de fuente */
+    font-family: 'Merriweather', serif; /* Fuente profesional */
+  }
+
+
+  .publication-block {
+    font-family: 'Merriweather', serif; /* Aplica una fuente profesional */
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: start;
+    space-x: 1rem;
+  }
+  
+  .publication-block img {
+    border-radius: 0.25rem;
+    width: 10rem;
+    height: 10rem;
+    object-cover: cover;
+    margin:auto;
+    margin-right: 15px;
+  }
+  
+  .publication-block a {
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  .publication-block a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .publication-block .flex-wrap {
+    font-size: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .publication-block .flex-wrap a {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    border: 1px solid var(--color-secondary-500);
+    border-radius: 0.25rem;
+    
+    transition: all 0.3s ease;
+  }
+  
+  .publication-block .flex-wrap a:hover {
+    background-color: var(--color-secondary-500);
+  }
+  
+  .custom-block .title {
+    font-family: 'Merriweather', serif; /* Aplica una fuente profesional */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+  }

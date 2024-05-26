@@ -42,8 +42,7 @@ imaging:
   anchor: smart
 timeout: 600000
 taxonomies:
-  author: authors
-  tag: tags
+  author: authors 
   publication_type: publication_types
 markup:
   _merge: deep

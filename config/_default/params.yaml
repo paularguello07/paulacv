@@ -6,32 +6,12 @@
 # Appearance
 appearance:
   mode: system
-  color: rose
+  color: paucolors
 
-profile:
-  avatar: images/avatar.jpg
-  avatar_shape: rectangular # Cambia esta línea a rectangular si está configurada como circular.
-  avatar_size: large # Cambia el tamaño de la imagen, puede ser large, medium, o small.
-  avatar_style: relief
 
-# SEO
-marketing:
-  seo:
-    site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
-  analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: ''
 
+citation:
+  citation_style: apa
 # Site header
 header:
   navbar:
@@ -46,11 +26,11 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Paula Arguello'
     license:
-      enable: false
+      enable: true
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
 # Localization
