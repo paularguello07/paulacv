@@ -46,7 +46,7 @@ sections:
       
       button:
         text: view more
-        url: /papers
+        url: /publication
 
     design:
       css_class: custom-block , sombra
