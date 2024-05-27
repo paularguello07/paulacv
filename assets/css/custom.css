@@ -1,29 +1,26 @@
 /* Hugo Blox color theme: GREEN */
 :root {
-  --color-secondary-50: rgb(245, 240, 247);  /* Tono claro de lila */
-  --color-secondary-100: rgb(237, 223, 240);  /* Tono claro de lila */
-  --color-secondary-200: rgb(220, 195, 230);  /* Tono claro de lila */
-  --color-secondary-300: rgb(200, 179, 212);  /* Tono claro de lila */
-  --color-secondary-400: rgb(180, 158, 192);  /* Tono medio de lila */
-  --color-secondary-500: rgb(160, 138, 173);  /* Tono medio de lila */
-  --color-secondary-600: rgb(140, 118, 153);  /* Tono medio de lila */
-  --color-secondary-700: rgb(120, 98, 134);   /* Tono oscuro de lila */
-  --color-secondary-800: rgb(100, 78, 114);   /* Tono oscuro de lila */
-  --color-secondary-900: rgb(80, 58, 94);     /* Tono oscuro de lila */
-  --color-secondary-950: rgb(60, 38, 75);     /* Tono más oscuro de lila */
+  --color-secondary-50: rgb(250, 237, 255);  /* Tono claro de lila */
+  --color-secondary-100: rgb(250, 232, 254);  /* Tono claro de lila */
+  --color-secondary-200: rgb(230, 201, 241);  /* Tono claro de lila */
+  --color-secondary-300: rgb(217, 190, 233);  /* Tono claro de lila */
+  --color-secondary-400: rgb(203, 174, 218);  /* Tono medio de lila */
+  --color-secondary-500: rgb(194, 165, 211);  /* Tono medio de lila */
+  --color-secondary-600: rgb(188, 153, 208);  /* Tono medio de lila */
+  --color-secondary-700: rgb(181, 145, 204);   /* Tono oscuro de lila */
+  --color-secondary-800: rgb(140, 108, 161);   /* Tono oscuro de lila */
+  --color-secondary-900: rgb(136, 98, 160);     /* Tono oscuro de lila */
+  --color-secondary-950: rgb(102, 64, 128);     /* Tono más oscuro de lila */
 }
 
 
-  .publication-images{
-    object-fit:contain;
-    width: 100%;
-    height: 10%;
-  }
-  .sombra{
-    background-color: rgb(245, 245, 245);
+  
+  .sombra {
+    box-shadow: 1px 1px 8px 1px var(--color-secondary-400);
+    margin: 1%; 
   }
   
-  .line {
+  .linee {
     height: 2px;
     width: 70px;
     background-color: var(--color-secondary-500);
@@ -71,13 +68,11 @@
     text-align: center; /* Centra el texto */
     font-size: 0px; /* Tamaño de fuente */
   }
-  .publication-block img {
-    width: 80%;
-  }
+ 
 
   .publication-block {
     border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    box-shadow: 2 5px 5px rgba(0, 0, 0, 0.1), 2 5px 2px rgba(0, 0, 0, 0.06);
     padding: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -87,7 +82,7 @@
   
   .publication-block img {
     border-radius: 0.25rem;
-    width: 10rem;
+    width: 15rem;
     height: 10rem;
     object-cover: cover;
     margin:auto;
@@ -100,7 +95,8 @@
   }
   
   .publication-block a:hover {
-    text-decoration: underline;
+    text-decoration:underline;
+    color:  var(--color-secondary-500);
   }
   
   
@@ -114,7 +110,7 @@
   .publication-block .flex-wrap a {
     display: inline-block;
     padding: 0.15rem 0.55rem;
-    border: 1px solid var(--color-secondary-500);
+    border: 1px solid var(--color-secondary-600);
     border-radius: 0.25rem;
     
     transition: all 0.3s ease;
@@ -122,6 +118,7 @@
   
   .publication-block .flex-wrap a:hover {
     background-color: var(--color-secondary-500);
+    color: white;
   }
   
   .custom-block .title {
@@ -129,3 +126,64 @@
     font-weight: bold; /* Fuente en negrita */
     margin-bottom: 0.5rem; /* Espaciado inferior */
   }
+
+  .view-more-button {
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    border: 1.5px solid var(--color-secondary-600);
+    background-color: #fff;
+    color: var(--color-secondary-900);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.view-more-button .fas {
+  margin-right: 10px;
+}
+
+.view-more-button:hover {
+  background-color: var(--color-secondary-500);
+  color: white;
+}
+
+/* Estilos generales para la galería */
+.gallery-grid {
+  display: grid;
+  gap: 10px; /* Espacio entre elementos */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el tamaño de las columnas */
+  padding: 5px;
+  justify-items: center;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Esquinas redondeadas opcionales */
+  transition: transform 0.2s; /* Transición suave al hacer hover */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Efecto zoom al hacer hover */
+}
+
+/* Tamaños específicos opcionales */
+.gallery-item--medium {
+  grid-column: span 2;
+}
+
+.gallery-item--large {
+  grid-column: span 3;
+}
+
+.gallery-item--full {
+  grid-column: span 4;
+}

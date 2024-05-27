@@ -1,18 +1,24 @@
 ---
-title: Publications
-cms_exclude: true
-
-# View.
-view: community/citation
-
-css_class: publication-block
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+title: 'Papers'
+date: 2024-05-19
+type: landing
 
 design:
-  css_class: publication-block
+  # Section spacing
+  spacing: '5rem'
 
+# Page sections
+sections:
+  - block: collection_custom
+    content:
+      title: Papers 📝
+      text: Here are my recent publications! 📘📖 Journals and coferences.
+      filters:
+        folders:
+          - publication
+    design:
+      view: community/citation
+      fill_image: false
+      columns: 3
 
 ---

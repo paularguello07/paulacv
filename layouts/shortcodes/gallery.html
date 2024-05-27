@@ -1,0 +1,49 @@
+{{/* Gallery Shortcode for Hugo Blox Builder. */}}
+{{/* Load gallery images from media library. */}}
+{{/* https://github.com/HugoBlox/hugo-blox-builder */}}
+
+{{/*
+    Docs: https://docs.hugoblox.com/content/writing-markdown-latex/#image-gallery
+
+    Parameters
+    ----------
+    album : default "gallery"
+        Album folder in `assets/media/albums/` to load images from.
+    order : default "asc"
+        Sort images by title ascending (asc) or descending (desc).
+    resize_options : default "750x750"
+        Resize options passed to Hugo `.Fit` function (https://gohugo.io/content-management/image-processing/).
+*/}}
+
+{{/* For gallery nested in landing page sections */}}
+{{ $.Page.Store.Set "has_gallery" true }}
+
+{{/* Get album folder or default to `media/albums/gallery/`. */}}
+{{ $album := (.Get "album") | default "gallery" }}
+{{ $album_path := path.Join "media" "albums" $album "*" }}
+
+{{/* Gallery options */}}
+{{ $sort_order := .Get "order" | default "asc" }}
+{{ $resize_options := printf "%s webp" (.Get "resize_options" | default "750x750") }}
+
+<div class="gallery-grid">
+  {{ $images := resources.Match $album_path }}
+  {{ range (sort $images "Name" $sort_order) }}
+    {{ $image := .Fit $resize_options }}
+    {{ $filename := path.Base .Name }}
+    {{ $caption := "" }}
+    {{ if $.Page.Params.gallery_item }}
+      {{ range (where (where $.Page.Params.gallery_item "album" $album) "image" $filename) }}
+        {{ $caption = .caption }}
+      {{ end }}
+    {{ end }}
+  <div class="gallery-item">
+    <a data-fancybox="gallery-{{$album}}" href="{{ .RelPermalink }}" {{ with $caption }}data-caption="{{.|markdownify|emojify|safeHTMLAttr}}"{{ end }}>
+      <img src="{{ $image.RelPermalink }}"  alt="{{ plainify $caption | default $filename }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+    </a>
+  </div>
+  {{ end }}
+</div>
+ 
+
+</div>

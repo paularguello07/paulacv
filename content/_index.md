@@ -37,11 +37,17 @@ sections:
     id: papers
     content:
       
-      title: Featured Publications
+      title: Featured Publications 🚀
+      text: 📚✨ Diving into innovation—check out my featured publications! 🌐🔍
       filters:
         folders:
           - publication
         featured_only: true
+      
+      button:
+        text: view more
+        url: /papers
+
     design:
       css_class: custom-block , sombra
       view: article-grid
@@ -52,8 +58,8 @@ sections:
   - block: collection_custom
     id: projects
     content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      title: Selected Projects 💡
+      text: 🔧🌟 Crafting solutions. Explore my selected projects! 🛠️💻
       filters:
         folders:
           - project
@@ -66,8 +72,8 @@ sections:
     
   - block: collection_custom
     content:
-      title: Recent Publications
-      text: "Recent publication"
+      title: Recent Publications 📈
+      text: "Here are my recent publications! 📘📖 Journals and coferences."
       filters:
         folders:
           - publication

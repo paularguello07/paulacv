@@ -5,7 +5,7 @@
 
 # Appearance
 appearance:
-  mode: system
+  mode: light
   color: paucolors
 
 
@@ -25,10 +25,9 @@ header:
 
 # Site footer
 footer:
-  copyright:
-    notice: '© {year} Paula Arguello'
+
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: false
       allow_commercial: false

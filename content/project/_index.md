@@ -12,11 +12,11 @@ sections:
   - block: collection_custom
     id: posts
     content:
-      title: Projects
+      title: Projects 💡
       subtitle: ''
-      text: 'Check out my recent projects below!'
+      text: 🔧🌟 Crafting solutions. Explore my selected projects! 🛠️💻
       # Choose how many pages you would like to display (0 = all pages)
-      count: 5
+      count: 0
       # Filter on criteria
       filters:
         # The folders to display content from
@@ -37,6 +37,8 @@ sections:
       sort_by: 'Date'
       sort_ascending: false
     design:
+      fill_image: false
       # Choose a listing view
-      view: card
+      view: article-grid  
+      columns: 3
 ---

@@ -46,12 +46,11 @@ interests:
 
 education:
 
-  - area: BSc Artificial Intelligence
+  - area: BSc Systems Engineering
     institution: Universidad Industrial de Santander
-    date_start: 2019
-    date_end: 2024
+    date_start: 2019-01-01
+    date_end: 2024-09-01
     summary: |
-      GPA: 3.2/4.0
   
 
 # Skills
@@ -61,7 +60,7 @@ skills:
     items:
       - name: Python
         description: ''
-        percent: 80
+        percent: 90
         icon: code-bracket
       - name: Data Science
         description: ''
@@ -75,9 +74,9 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
+      - name: Fashion
         description: ''
-        percent: 60
+        percent: 90
         icon: person-simple-walk
       - name: Cats
         description: ''
@@ -89,12 +88,10 @@ skills:
         icon: camera
 
 languages:
-  - name: English
+  - name: Spanish
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+  - name: English
+    percent: 85
 
 # Awards.
 #   Add/remove as many awards below as you like.

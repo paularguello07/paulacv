@@ -12,7 +12,7 @@
 
 <div class="publication-block view-citation flex items-start shadow-md rounded-lg">
   {{ with $resource }}
-    {{ $image := .Fill (printf "200x200 %s" $anchor) }}
+    {{ $image := .Fill (printf "290x210 %s" $anchor) }}
     {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
     <img class="w-48 h-48 object-cover rounded-md" loading="lazy" src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}" alt="{{ $item.Title | plainify }}">
   {{ end }}
