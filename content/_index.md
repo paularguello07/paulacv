@@ -46,7 +46,7 @@ sections:
       
       button:
         text: view more
-        url: paulacv/publication
+        url: /publication
 
     design:
       css_class: custom-block , sombra
