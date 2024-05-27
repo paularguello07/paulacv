@@ -6,8 +6,7 @@
 # Website name
 title: Paula Arguello CV
 # Website URL
-baseURL: 'https://example.com/'
-
+baseURL: 'http://www.paularguello.me/'
 ############################
 ## LANGUAGE
 ############################
