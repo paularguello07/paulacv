@@ -95,17 +95,17 @@
 {{ end }}
 <br>
 <br>
-<div class="gallery-grid">
-
-  {{/* Attempt to automatically load gallery images from page bundle */}}
-  {{ $images := resources.Match "media/albums/gallery/*" }}
-  {{ range (sort $images "Name" "asc") }}
-    {{ $image := .Fit "750x750" }}
-    <div class="gallery-item">
-      <a data-fancybox="gallery" href="{{ .RelPermalink }}">
-        <img src="{{ $image.RelPermalink }}" loading="lazy" alt="{{ .Name }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
-      </a>
-    </div>
-  {{ end }}
-
+<div class="max-w-5xl mx-auto p-4">
+  <div class="gallery-grid">
+    {{/* Attempt to automatically load gallery images from page bundle */}}
+    {{ $images := resources.Match "media/albums/gallery/*" }}
+    {{ range (sort $images "Name" "asc") }}
+      {{ $image := .Fit "750x750" }}
+      <div class="gallery-item">
+        <a data-fancybox="gallery" href="{{ .RelPermalink }}">
+          <img src="{{ $image.RelPermalink }}" loading="lazy" alt="{{ .Name }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+        </a>
+      </div>
+    {{ end }}
+  </div>
 </div>
