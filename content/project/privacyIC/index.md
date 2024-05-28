@@ -1,12 +1,10 @@
 ---
 title: Privacy Preserving Image Captioning
 date: 2024-01-01
-authors: ""
 summary: "Privacy-preserving scene captioning using a learned refractive lens 📸🔒"
 image: 
     preview_only: true
 
-reading_time: false
 show_breadcrumb: true
 
 ---
