@@ -26,8 +26,9 @@ publishDate: '2020-08-07T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+publication: In IEEE Colombian Conference on Applications of Computational Intelligence 
+publication_short: In IEEE ColCACI 2020
+
 show_breadcrumb: true
 abstract: The tensor completion problem solves the recovery of corrupted data in a multidimensional array named as a tensor. The traditional approaches in tensor completion are based on the transform tensor singular value decomposition(tt-SVD). These approaches minimize the tensor nuclear norm in a domain of an orthogonal transformation to induce low tensorial rank representation. Hence, they require previous knowledge of the data to ensure a low tensor rank representation and, therefore, to ensure a good quality reconstruction. On the other hand, based on the wide progress of deep learning in diverse contexts, this paper presents a 3DU-Net architecture for tensor data recovery in the problem of grayscale videos. The proposed method consists of convolutional layers with 3D filters to take advantage of the information at the spatio-temporal dimensions. The experimental results show that the proposed method has better performance in relative error (RE), peak-to-signal-ratio (PSNR), and less runtime compared with the state-of-the-art solutions. In particular, in the presence of noise, our proposed approach improves the recovery in up to 5.99 dB, and 0.09 in the RE with an 85% of corrupted pixels. In the noiseless case, the proposed architecture improves in 4.39 dB and 0.07 in the RE, when an 85% of the data is lost. Furthermore, the proposed method shows to be faster than the state-of-the-art in the reconstruction time in at least 2.5 times.
 
