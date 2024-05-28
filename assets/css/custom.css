@@ -154,9 +154,13 @@
 .gallery-grid {
   display: grid;
   gap: 10px; /* Espacio entre elementos */
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el tamaño de las columnas */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el tamaño de las columnas */
   padding: 5px;
   justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
 }
 
 .gallery-item {
@@ -164,8 +168,9 @@
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
   border-radius: 8px; /* Esquinas redondeadas opcionales */
   transition: transform 0.2s; /* Transición suave al hacer hover */
 }

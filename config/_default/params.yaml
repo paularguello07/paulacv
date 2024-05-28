@@ -21,16 +21,11 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
+      filename: "icon-.png"
       text: "Paula Arguello"
 
 # Site footer
-footer:
 
-    license:
-      enable: false
-      allow_derivatives: false
-      share_alike: false
-      allow_commercial: false
 
 # Localization
 locale:

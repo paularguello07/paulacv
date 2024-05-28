@@ -19,7 +19,7 @@ show_breadcrumb: true
 - **Privacy-Preserving Lens:** A specially designed lens that distorts sensitive attributes, such as faces, ethnicity, and gender, ensuring privacy before image acquisition.
 - **Optimized Deep Learning:** Combines an optimized refractive lens with a deep network architecture for end-to-end scene captioning from distorted images. 🤖🔍
 - **Comprehensive Evaluation:** Validated through extensive simulations and hardware experiments, showing a superior balance between privacy and utility.
-## Related Papers
+## Published Papers
 
 [📌 **Optics lens design for privacy-preserving scene captioning**:  _Paula Arguello, Jhon Lopez, Carlos Hinojosa, Henry Arguello_]({{< relref "/publication/ICIP2022-privacy" >}})
 

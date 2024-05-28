@@ -1,0 +1,111 @@
+{{/* Hugo Blox: Collection */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $view := $block.design.view | default "card" }}
+
+{{ $items_offset := $block.content.offset | default 0 }}
+{{ $items_count := $block.content.count }}
+{{ if eq $items_count 0 }}
+  {{ $items_count = 65535 }}
+{{ else }}
+  {{ $items_count = $items_count | default 5 }}
+{{ end }}
+
+{{/* Query */}}
+{{ $query := site.RegularPages }}
+{{ $archive_page := "" }}
+
+{{/* Filters */}}
+{{ if $block.content.page_type }}
+  {{ $query = where $query "Type" $block.content.page_type }}
+  {{ $archive_page = site.GetPage "Section" $block.content.page_type }}
+{{ end }}
+{{ if $block.content.filters.folders }}
+  {{ $folders := $block.content.filters.folders }}
+  {{ $query = where $query "Section" "in" $folders }}
+  {{/* Init archive page to main folder */}}
+  {{ $main_folder := index $folders 0 }}
+  {{ $archive_page = site.GetPage "Section" $main_folder }}
+{{ end }}
+{{ if $block.content.filters.tag }}
+  {{ $archive_page = site.GetPage (printf "tags/%s" (urlize $block.content.filters.tag)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content.filters.category }}
+  {{ $archive_page = site.GetPage (printf "categories/%s" (urlize $block.content.filters.category)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content.filters.publication_type }}
+  {{ $archive_page = site.GetPage (printf "publication_types/%s" $block.content.filters.publication_type) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content.filters.exclude_publication_type }}
+  {{ $query = $query | complement (site.GetPage (printf "publication_types/%s" $block.content.filters.exclude_publication_type)).Pages }}
+{{ end }}
+{{ if $block.content.filters.author }}
+  {{ $archive_page = site.GetPage (printf "authors/%s" (urlize $block.content.filters.author)) }}
+  {{ $query = $query | intersect $archive_page.Pages }}
+{{ end }}
+{{ if $block.content.filters.featured_only }}
+  {{ $query = where $query "Params.featured" "==" true }}
+{{ end }}
+{{ if $block.content.filters.exclude_featured }}
+  {{ $query = where $query "Params.featured" "!=" true }}
+{{ end }}
+{{ if $block.content.filters.exclude_past }}
+  {{ $query = where $query "Date" ">=" now }}
+{{ end }}
+{{ if $block.content.filters.exclude_future }}
+  {{ $query = where $query "Date" "<" now }}
+{{ end }}
+
+{{ $count := len $query }}
+
+{{/* Sort */}}
+{{ $sort_by := $block.content.sort_by | default "Date" }}
+{{ $sort_by = partial "functions/get_sort_by_parameter" $sort_by }}
+{{ $sort_ascending := $block.content.sort_ascending | default (eq $block.content.order "asc") | default false }}
+{{ $sort_order := cond $sort_ascending "asc" "desc" }}
+{{ $query = sort $query $sort_by $sort_order }}
+
+{{/* Offset and Limit */}}
+{{ if gt $items_offset 0 }}
+  {{ $query = first $items_count (after $items_offset $query) }}
+{{ else }}
+  {{ $query = first $items_count $query }}
+{{ end }}
+
+{{ $columns := $block.design.columns | default "2" }}
+
+{{ if $block.content.title }}
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    <span class="linee"></span>
+    {{ $block.content.title | emojify | $page.RenderString }}
+    <span class="linee"></span>
+  </div>
+
+  {{ with $block.content.text }}<p>{{ . | emojify | $page.RenderString }}</p>{{ end }}
+</div>
+{{ end }}
+<br>
+<br>
+<div class="gallery-grid">
+
+  {{/* Attempt to automatically load gallery images from page bundle */}}
+  {{ $images := resources.Match "media/albums/gallery/*" }}
+  {{ range (sort $images "Name" "asc") }}
+    {{ $image := .Fit "750x750" }}
+    <div class="gallery-item">
+      <a data-fancybox="gallery" href="{{ .RelPermalink }}">
+        <img src="{{ $image.RelPermalink }}" loading="lazy" alt="{{ .Name }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+      </a>
+    </div>
+  {{ end }}
+
+</div>

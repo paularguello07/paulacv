@@ -28,8 +28,6 @@ profiles:
   - icon: at-symbol
     url: 'mailto:paula2191444@correo.uis.edu.co'
     label: E-mail Me
-  - icon: brands/instagram
-    url: https://www.instagram.com/pau_argut/
   - icon: brands/github
     url: https://github.com/paularguello07
   - icon: brands/linkedin
@@ -38,6 +36,8 @@ profiles:
     url: https://scholar.google.com/citations?user=TTo5b-cAAAAJ&hl=es&oi=ao
   - icon: academicons/orcid
     url: https://orcid.org/0000-0001-8266-8802
+  - icon: brands/instagram
+    url: https://www.instagram.com/pau_argut/
 
 interests:
   - Artificial Intelligence

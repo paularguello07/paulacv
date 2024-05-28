@@ -82,6 +82,15 @@ sections:
       css_class: custom-block , sombra
       view: community/citation
 
+  - block: justtitle
+    content:
+      title: Gallery 📷
+      text: "Some photos from conferences 🙋🏻‍♀️ and achievements 🏆."
+
+    design:
+      css_class: custom-block
 
 
 ---
+
+{{< gallery album="simatec_album" resize_options="300x300" >}}

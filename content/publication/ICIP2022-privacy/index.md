@@ -50,7 +50,7 @@ url_code: ''
 url_dataset: ''
 url_poster: 'poster_icip.pdf'
 url_project: ''
-url_slides: 'slides_icip-pdf'
+url_slides: 'slides_icip.pdf'
 url_source: ''
 url_video: ''
 
