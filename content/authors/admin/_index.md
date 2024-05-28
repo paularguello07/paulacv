@@ -51,41 +51,52 @@ education:
     date_start: 2019-01-01
     date_end: 2024-09-01
     summary: |
+              Research group: High Dimensional Signal Processing (HDSP)
   
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
+    color: 'pink'
+    color_border: 'pink'
     items:
       - name: Python
         description: ''
         percent: 90
         icon: code-bracket
-      - name: Data Science
+      - name: Autodidact
         description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
+        percent: 80
+        icon: hero/presentation-chart-line
+      - name: Mathematical Abstraction 
         description: ''
-        percent: 40
-        icon: circle-stack
+        percent: 80
+        icon: hero/calculator
+      - name: Writing
+        description: ''
+        percent: 70
+        icon: hero/pencil
   - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
+    color: 'purple'
+    color_border: 'purple'
     items:
       - name: Fashion
         description: ''
         percent: 90
-        icon: person-simple-walk
-      - name: Cats
+        icon: custom/dress
+      - name: Tailoring
         description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
+        percent: 70
+        icon: custom/sew
+      - name: Art
         description: ''
         percent: 80
-        icon: camera
+        icon: custom/art
+      - name: Dogs
+        description: ''
+        percent: 100
+        icon: custom/dog
 
 languages:
   - name: Spanish
@@ -102,5 +113,4 @@ languages:
 
 ## About Me 👩🏻‍💻
 
-I am a Systems Engineering student at Universidad Industrial de Santander and a dedicated young researcher. My research areas lies in computational imaging, privacy-preserving techniques, medical imaging, deep learning, and machine learning.
-My motivation stems from a profound passion for research. I'm driven by the belief that technology and innovation can bring about positive change, and I'm dedicated to contributing to the development of Colombia
+I am a Systems Engineering student at Universidad Industrial de Santander and a dedicated young researcher. My research focuses on computational imaging, privacy-preserving techniques, medical imaging, and deep learning. Driven by a profound passion for research, I believe that technology and innovation can bring about positive change. I am committed to contributing to the development of Colombia through my work.

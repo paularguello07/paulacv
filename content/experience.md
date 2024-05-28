@@ -12,8 +12,11 @@ design:
 sections:
   - block: resume-experience
     content:
+      title: Education
       username: admin
     design:
+      css_class: centrado
+      style: 'text-align: center;'
       # Hugo date format
       date_format: 'January 2006'
       # Education or Experience section first?
@@ -23,11 +26,7 @@ sections:
       title: Skills & Hobbies
       username: admin
     design:
-      show_skill_percentage: false
-  - block: resume-awards
-    content:
-      title: Awards
-      username: admin
+      show_skill_percentage: true
   - block: resume-languages
     content:
       title: Languages
