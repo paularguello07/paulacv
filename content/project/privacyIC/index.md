@@ -24,7 +24,8 @@ authors:
 - **Comprehensive Evaluation:** Validated through extensive simulations and hardware experiments, showing a superior balance between privacy and utility.
 ## Published Papers
 
-[📌 **Optics lens design for privacy-preserving scene captioning**:  _Paula Arguello, Jhon Lopez, Carlos Hinojosa, Henry Arguello_]({{< relref "/publication/ICIP2022-privacy" >}})
+[📌 **Optics lens design for privacy-preserving scene captioning**:  _Paula Arguello, Jhon Lopez, Carlos Hinojosa, Henry Arguello_**🏆BEST PAPER AWARD🏆**]({{< relref "/publication/ICIP2022-privacy" >}}) 
+
 
 
 ## Results

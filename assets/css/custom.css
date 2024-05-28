@@ -121,6 +121,11 @@
     color: white;
   }
   
+  .banner_pau {
+    max-height: 430px;
+    min-height: 200px;
+    object-fit: cover;
+  }
   .custom-block .title {
     font-size: 1.5rem; /* Tamaño de fuente */
     font-weight: bold; /* Fuente en negrita */
