@@ -15,7 +15,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Undergraduate student
+role: Undergraduate student at Universidad Industrial de Santander
 
 # Organizations/Affiliations to display in Biography blox
 organizations:

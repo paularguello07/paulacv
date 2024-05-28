@@ -6,7 +6,12 @@ image:
     preview_only: true
 
 show_breadcrumb: true
-
+authors:
+    - admin
+    - Jhon Lopez
+    - Carlos Hinojosa
+    - Karen Sanchez
+    - Henry Arguello 
 ---
 ![screen reader text](/privacy/full_method.png "Proposed end-to-end model. The optical encoder incorporates a camera with a refractive lens, which is parametrized by a linear combination of Zernike polynomials. The decoder is formed by a convolutional feature extraction and an LSTM Network with attention, which produces a caption from the private image")
 
