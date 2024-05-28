@@ -124,7 +124,10 @@
   .banner_pau {
     max-height: 430px;
     min-height: 200px;
-    object-fit: cover;
+  }
+  .banner_pau img {
+    min-width: 100px;
+    min-height: 300px;
   }
   .custom-block .title {
     font-size: 1.5rem; /* Tamaño de fuente */
