@@ -31,11 +31,16 @@ authors:
 
 
 ## Results
+### Ablation against other privacy-preserving approaches
 ![screen reader text](/privacy/ablation.png "Qualitative results on two test set samples. Insets display the SSIM and Meteor between the distorted and original images")
 
+### Robustness to deconvolution
 ![screen reader text](/privacy/attacks.png "Evaluation of the robustness of our lens-protected images against deconvolution attacks. Qualitative results show that the identities of individuals cannot be recovered after applying non-blind (Wiener) and blind (DeblurGANv2) deconvolution")
 
 ## Hardware Implementation
+
+![screen reader text](/privacy/lab.jpg "(Top) Experimental hardware setup for our proposed privacy-preserving image captioning approach. (Bottom) PSFs and qualitative results on an image example acquired with a conventional camera (left), our proof-of-concept camera (middle), and simulated camera (right)")
+
 
 ## Related Papers
 
