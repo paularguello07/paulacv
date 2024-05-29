@@ -11,6 +11,7 @@ authors:
     - Jhon Lopez
     - Carlos Hinojosa
     - Karen Sanchez
+    - Hoover Rueda-Chacón
     - Henry Arguello 
 ---
 ![screen reader text](/privacy/full_method.png "Proposed end-to-end model. The optical encoder incorporates a camera with a refractive lens, which is parametrized by a linear combination of Zernike polynomials. The decoder is formed by a convolutional feature extraction and an LSTM Network with attention, which produces a caption from the private image")
@@ -24,11 +25,22 @@ authors:
 - **Comprehensive Evaluation:** Validated through extensive simulations and hardware experiments, showing a superior balance between privacy and utility.
 ## Published Papers
 
-[📌 **Optics lens design for privacy-preserving scene captioning**:  _Paula Arguello, Jhon Lopez, Carlos Hinojosa, Henry Arguello_**🏆BEST PAPER AWARD🏆**]({{< relref "/publication/ICIP2022-privacy" >}}) 
+[📌 **Optics lens design for privacy-preserving scene captioning**: ]({{< relref "/publication/ICIP2022-privacy" >}})_Paula Arguello, Jhon Lopez, Carlos Hinojosa, Henry Arguello_**🏆BEST PAPER AWARD ICIP 2022🏆**
 
+[📌 **Learning to Describe Scenes via Privacy-aware Optical Lens**: ]({{< relref "/publication/LATINX2024cvpr-privacy" >}})_Paula Arguello, Jhon Lopez, Karen Sanchez, Carlos Hinojosa, Hoover Rueda-Chacón, Henry Arguello_ **LatinX at CVPR 2024**
 
 
 ## Results
 ![screen reader text](/privacy/ablation.png "Qualitative results on two test set samples. Insets display the SSIM and Meteor between the distorted and original images")
 
 ![screen reader text](/privacy/attacks.png "Evaluation of the robustness of our lens-protected images against deconvolution attacks. Qualitative results show that the identities of individuals cannot be recovered after applying non-blind (Wiener) and blind (DeblurGANv2) deconvolution")
+
+## Hardware Implementation
+
+## Related Papers
+
+Related works that you may be interested 👇
+
+[🔗 **Privhar: Recognizing Human Actions From Privacy-Preserving Lens**:](https://carloshinojosa.me/project/privhar/) _Carlos Hinojosa, Miguel Marquez, Henry Arguello, Ehsan Adeli,Li Fei-Fei, Juan Carlos Niebles._
+
+[🔗 **Learning Privacy-preserving Optics for Human Pose Estimation**: ](https://carloshinojosa.me/publication/conf-iccv2021/) _Carlos Hinojosa, Juan Carlos Niebles, Henry Arguello._
