@@ -101,13 +101,25 @@ skills:
 languages:
   - name: Spanish
     percent: 100
-  - name: English
+    
+  - name: English (C1)
     percent: 85
+    description: 'C1'
+    
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
+
+Awards:
+  - title: BEST PAPER AWARD
+    awarder: ICIP 2022
+    date: 2022-10-18
+    url: https://paularguello.me/publication/icip2022-privacy/
+    summary: |
+      Best Paper Award to "Optics Lens Design for Privacy-Preserving Scene Captioning"
+
+    
+  # Add/remove as many awards below as you like.
+  # Only `title`, `awarder`, and `date` are required.
+  # Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 
 ---
 

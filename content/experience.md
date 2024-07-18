@@ -31,4 +31,12 @@ sections:
     content:
       title: Languages
       username: admin
+      button:
+        text: Download CV
+        url: uploads/resume.pdf
+
+  - block: resume-awards
+    content:
+      title: Awards
+      username: admin
 ---
