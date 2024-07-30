@@ -15,11 +15,11 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Systems Engineer
+role: B.S. Systems Engineer
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: HDSP
+  - name: High Dimensional Signal Processing - Research Group
     url: http://hdspgroup.com/
 
 # Social network links
@@ -54,7 +54,7 @@ education:
               Research group: High Dimensional Signal Processing (HDSP)
     button:
         text: Thesis Book (Spanish)
-        url: uploads/libro.pdf
+        url: ../uploads/libro.pdf
   
 
 # Skills
