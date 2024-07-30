@@ -29,6 +29,8 @@ authors:
 
 [📌 **Learning to Describe Scenes via Privacy-aware Optical Lens**: ]({{< relref "/publication/LATINX2024cvpr-privacy" >}})_Paula Arguello, Jhon Lopez, Karen Sanchez, Carlos Hinojosa, Hoover Rueda-Chacón, Henry Arguello_ **LatinX at CVPR 2024**
 
+[📌 **Learning to Describe Scenes via Privacy-aware Designed Optical Lens**: ]({{< relref "/publication/TCI-privacy" >}})_Paula Arguello, Jhon Lopez, Karen Sanchez, Carlos Hinojosa, Fernando Rojas-Morales, Henry Arguello_ **IEEE Transactions on Computational Imaging**
+
 
 ## Results
 ### Ablation against other privacy-preserving approaches

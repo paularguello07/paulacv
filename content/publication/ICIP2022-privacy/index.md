@@ -38,7 +38,7 @@ summary: 2022 IEEE International Conference on Image Processing (ICIP)
 
 
 # Display this page in the Featured widget?
-featured: true
+featured: False
 
 # Custom links (uncomment lines below)
 # links:

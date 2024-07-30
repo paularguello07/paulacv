@@ -15,7 +15,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Undergraduate student at Universidad Industrial de Santander
+role: Systems Engineer
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -46,12 +46,15 @@ interests:
 
 education:
 
-  - area: BSc Systems Engineering
+  - area: B.S. in Systems Engineering
     institution: Universidad Industrial de Santander
     date_start: 2019-01-01
     date_end: 2024-09-01
     summary: |
               Research group: High Dimensional Signal Processing (HDSP)
+    button:
+        text: Thesis Book (Spanish)
+        url: uploads/libro.pdf
   
 
 # Skills
@@ -73,13 +76,13 @@ skills:
         description: ''
         percent: 80
         icon: hero/calculator
-      - name: Writing
+      - name: Academic Writing
         description: ''
         percent: 70
         icon: hero/pencil
   - name: Hobbies
-    color: 'purple'
-    color_border: 'purple'
+    color: '#A9D0F5'
+    color_border: '#A9D0F5'
     items:
       - name: Fashion
         description: ''
@@ -105,6 +108,7 @@ languages:
   - name: English (C1)
     percent: 85
     description: 'C1'
+  
     
 
 
@@ -115,6 +119,15 @@ Awards:
     url: https://paularguello.me/publication/icip2022-privacy/
     summary: |
       Best Paper Award to "Optics Lens Design for Privacy-Preserving Scene Captioning"
+      ![screen reader text](/icip2022/image.png)
+
+  - title: Outstanding Thesis
+    awarder: Universidad Industrial de Santander, Colombia.
+    date: 2024-07-19
+    url: https://paularguello.me/project/privacyic/
+    summary: |
+      Author of the Undergraduate Thesis: "Lens Design for Enhancing Privacy in Image Captioning".
+      ![screen reader text](/albums/gallery/sustentacion.jpeg)
 
     
   # Add/remove as many awards below as you like.
@@ -125,4 +138,4 @@ Awards:
 
 ## About Me 👩🏻‍💻
 
-I am a Systems Engineering student at Universidad Industrial de Santander and a dedicated young researcher. My research focuses on computational imaging, privacy-preserving techniques, medical imaging, and deep learning. Driven by a profound passion for research, I believe that technology and innovation can bring about positive change. I am committed to contributing to the development of Colombia through my work.
+I am a Systems Engineer from the Universidad Industrial de Santander in Colombia, and a dedicated young researcher. I am passionate about exploring the intersections of image processing, optics, and deep learning. I have experience in applying deep learning techniques and optical systems to address complex image processing challenges. I excel at collaborating with multidisciplinary teams and am dedicated to driving innovation in the field of image analysis. My research interests encompass image processing, optical and computational imaging, medical imaging, and visual privacy. I thrive on solving technical problems and am committed to advancing technology through impactful research.

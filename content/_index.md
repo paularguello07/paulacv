@@ -38,7 +38,7 @@ sections:
     content:
       
       title: Featured Publications 🚀
-      text: 📚✨ Diving into innovation—check out my featured publications! 🌐🔍
+      text: Diving into innovation—check out my featured publications!
       filters:
         folders:
           - publication
@@ -59,7 +59,7 @@ sections:
     id: projects
     content:
       title: Selected Projects 💡
-      text: 🔧🌟 Crafting solutions. Explore my selected projects! 🛠️💻
+      text: Crafting solutions. Explore my selected projects!
       filters:
         folders:
           - project
@@ -73,7 +73,7 @@ sections:
   - block: collection_custom
     content:
       title: Recent Publications 📈
-      text: "Here are my recent publications! 📘📖 Journals and coferences."
+      text: "Here are my recent publications! Journals and coferences."
       filters:
         folders:
           - publication
@@ -85,7 +85,7 @@ sections:
   - block: justtitle
     content:
       title: Gallery 📷
-      text: "Some photos from conferences 🙋🏻‍♀️ and achievements 🏆."
+      text: "Some photos from conferences and achievements 🏆."
 
     design:
       css_class: custom-block
