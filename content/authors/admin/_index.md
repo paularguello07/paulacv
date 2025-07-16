@@ -15,7 +15,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: B.S. Systems Engineer
+role:  First-Year PhD Student at University of Southern California
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -46,16 +46,24 @@ interests:
 
 education:
 
-  - area: B.S. in Systems Engineering
+  - area: BS Systems Engineering
     institution: Universidad Industrial de Santander
     date_start: 2019-01-01
     date_end: 2024-09-01
     summary: |
               Research group: High Dimensional Signal Processing (HDSP)
-    button:
-        text: Thesis Book (Spanish)
-        url: ../uploads/libro.pdf
-  
+
+  - area: Junior Research Scientist
+    institution: Ubicept. Inc.
+    date_start: 2024-09-16
+    date_end: 2025-07-11
+    summary: |
+              Conducted research on computational imaging and image processing for single-photon avalanche diode (SPAD)  cameras. Developed deep learning models to address imaging challenges, improving system precision.
+
+  - area: First-Year PhD Student on Computer Science
+    institution: University of Southern California
+    date_start: 2025-08-26
+
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -64,7 +72,7 @@ skills:
     color: 'pink'
     color_border: 'pink'
     items:
-      - name: Python
+      - name: Python / Pytorch
         description: ''
         percent: 90
         icon: code-bracket
@@ -138,4 +146,4 @@ Awards:
 
 ## About Me 👩🏻‍💻
 
-I am a Systems Engineer from the Universidad Industrial de Santander in Colombia, and a dedicated young researcher. I am passionate about exploring the intersections of image processing, optics, and deep learning. I have experience in applying deep learning techniques and optical systems to address complex image processing challenges. I excel at collaborating with multidisciplinary teams and am dedicated to driving innovation in the field of image analysis. My research interests encompass image processing, optical and computational imaging, medical imaging, and visual privacy. I thrive on solving technical problems and am committed to advancing technology through impactful research.
+I am a **First-Year PhD Student on Computer Science at University of Sothern California**, Los Angeles. My research focuses on computational imaging, privacy-preserving techniques, medical imaging, and deep learning. Driven by a profound passion for research, I believe that technology and innovation can bring about positive change. I am committed to contributing to the development of Colombia through my work.
